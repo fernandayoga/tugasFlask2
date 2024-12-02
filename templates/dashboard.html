@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+<p>Selamat datang, {{ session['nama'] }}!</p>
+
+<ul>
+    <li><a href="{{ url_for('data_diri') }}">Data Diri</a></li>
+    <li><a href="{{ url_for('krs') }}">KRS</a></li>
+    <li><a href="{{ url_for('ipk') }}">IPK</a></li>
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}KRS{% endblock %}
+
+{% block content %}
+<div class="hasil">
+<h1>KRS</h1>
+<p>Kode Mata Kuliah: {{ kode }}</p>
+<p>Mata Kuliah: {{ matkul }}</p>
+<p>Jumlah SKS: {{ sks }}</p>
+<button class="btn">
+<a href="{{ url_for('dashboard') }}">Kembali ke Dashboard</a>
+</button>
+</div>
+{% endblock %}

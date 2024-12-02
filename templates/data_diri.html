@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Data Diri{% endblock %}
+
+{% block content %}
+
+<div class="hasil">
+<h1>Data Diri</h1>
+<p>Nama: {{ nama }}</p>
+<p>NIM: {{ nim }}</p>
+<p>Jurusan: {{ jurusan }}</p>
+<p>Email: {{ email }}</p>
+<button class="btn">
+<a href="{{ url_for('dashboard') }}">Kembali ke Dashboard</a>
+</button>
+</div>
+{% endblock %}

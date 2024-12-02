@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}IPK{% endblock %}
+
+{% block content %}
+<div class="hasil">
+<h1>IPK</h1>
+<p>Nilai: {{ nilai }}</p>
+<button class="btn">
+<a href="{{ url_for('dashboard') }}">Kembali ke Dashboard</a>
+</button>
+</div>
+{% endblock %}
